@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+                android:id="@+id/mapFragment"
+                class="com.here.mpa.mapping.AndroidXMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+    </FrameLayout>
+</RelativeLayout>
