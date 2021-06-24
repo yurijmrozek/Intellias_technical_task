@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/mainFrame"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/naviCtrlButton"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infolabel"/>
+
+    <fragment
+        class="com.here.android.mpa.mapping.AndroidXMapFragment"
+        android:id="@+id/mapfragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <fragment
-                android:id="@+id/mapFragment"
-                class="com.here.mpa.mapping.AndroidXMapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 
-
-    </FrameLayout>
-</RelativeLayout>
+</LinearLayout>

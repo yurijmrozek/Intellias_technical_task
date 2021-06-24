@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Intellias_technical_task</string>
+    <string name="app_name">Intellias_tt</string>
+    <string name="engine_init_error">Cannot init engine(</string>
+    <string name="start_navi">start</string>
+    <string name="stop_navi">finish</string>
+    <string name="restart_navi">restart</string>
 </resources>
